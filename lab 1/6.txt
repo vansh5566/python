@@ -1,0 +1,7 @@
+WRITE PYTHON PROGRAMS FOR THE FOLLOWING. (SIMPLE PROGRAMS)
+
+Convert hours into minutes. 
+
+hours = float(input())
+minutes = hours * 60
+print(minutes)

@@ -1,0 +1,8 @@
+WRITE PYTHON PROGRAMS FOR THE FOLLOWING. (SIMPLE PROGRAMS)
+
+Multiply two numbers
+
+num1 = float(input())
+num2 = float(input())
+result = num1 / num2 if num2 != 0 else "Cannot divide by zero"
+print(result)

@@ -1,0 +1,7 @@
+WRITE PYTHON PROGRAMS FOR THE FOLLOWING. (SIMPLE PROGRAMS)
+Subtract two numbers.
+
+num1 = float(input())
+num2 = float(input())
+difference = num1 - num2
+print(difference)
