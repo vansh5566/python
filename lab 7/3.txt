@@ -1,0 +1,22 @@
+3.	Create a dictionary with dept no, employee roll no. and salary. Find out department wise min and maximum of salary.
+
+
+
+departments = [
+    {"dept_no": 1, "emp_roll_no": 101, "salary": 50000},
+    {"dept_no": 1, "emp_roll_no": 102, "salary": 60000},
+    {"dept_no": 2, "emp_roll_no": 103, "salary": 70000},
+    {"dept_no": 2, "emp_roll_no": 104, "salary": 55000},
+    {"dept_no": 3, "emp_roll_no": 105, "salary": 80000},
+]
+
+dept_salary = {}
+for emp in departments:
+    dept_no = emp["dept_no"]
+    salary = emp["salary"]
+    if dept_no not in dept_salary:
+        dept_salary[dept_no] = []
+    dept_salary[dept_no].append(salary)
+
+for dept, salaries in dept_salary.items():
+    print(f"Department {dept}: Min Salary = {min(salaries)}, Max Salary = {max(salaries)}")

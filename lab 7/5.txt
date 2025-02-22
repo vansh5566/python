@@ -1,0 +1,7 @@
+5.	Create two dictionaries – one containing grocery items and their prices and another containing grocery items and quantity purchased. By using the values from these two dictionaries compute the total bill.
+
+
+grocery_prices = {"apple": 2.0, "banana": 1.0, "milk": 3.5, "bread": 2.5}
+grocery_quantity = {"apple": 3, "banana": 5, "milk": 2, "bread": 1}
+total_bill = sum(grocery_prices[item] * grocery_quantity.get(item, 0) for item in grocery_prices)
+print(f"Total bill: ${total_bill:.2f}")

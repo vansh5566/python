@@ -1,0 +1,9 @@
+2.	Write a program to check whether a dictionary is empty or not.
+
+
+
+def is_dict_empty(d):
+    return not bool(d)
+
+dict5 = {}
+print(is_dict_empty(dict5))
